@@ -1,0 +1,135 @@
+[
+  {
+    "Naziv": "Avatar: Put Vode",
+    "Redatelj": "James Cameron",
+    "Godina": "2022",
+    "Žanr": "akcija, avantura, SF",
+    "Uloge": "Sam Worthington, Zoe Saldana, Giovanni Ribisi, Stephen Lang, Vin Diesel, Michelle Yeoh, Kate Winslet, Sigourney Weaver",
+    "Trajanje": "nepoznato",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-12-15",
+    "Slika": "images/avatar.jpg"
+  },
+  {
+    "Naziv": "Izgubljeni Grad",
+    "Redatelj": "Aaron Nee, Adam Nee",
+    "Godina": "2022",
+    "Žanr": "akcija, komedija",
+    "Uloge": "Sandra Bullock, Channing Tatum, Daniel Radcliffe, Brad Pitt",
+    "Trajanje": "112 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-03-24",
+    "Slika": "images/izgubljeni_grad.jpg"
+  },
+  {
+    "Naziv": "Sonic: Super Jež 2",
+    "Redatelj": "Jeff Fowler",
+    "Godina": "2022",
+    "Žanr": "avantura, obiteljski",
+    "Uloge": "Luka Bulović, Ivan Đuričić, Ivan Šarić, Domagoj Janković, Amanda Prenkaj",
+    "Trajanje": "122 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-03-31",
+    "Slika": "images/sonic2.jpg"
+  },
+  {
+    "Naziv": "Čudesne zvijeri: Dumbeldorove tajne",
+    "Redatelj": "David Yates",
+    "Godina": "2022",
+    "Žanr": "akcija, avantura",
+    "Uloge": "Eddie Redmayne, Jude Law, Ezra Miller, Dan Fogler",
+    "Trajanje": "142 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-04-14",
+    "Slika": "images/cudesne_zvijeri.jpg"
+  },
+  {
+    "Naziv": "Doktor Strange U Multiverzumu Ludila",
+    "Redatelj": "Sam Raimi",
+    "Godina": "2022",
+    "Žanr": " SF avantura",
+    "Uloge": "Benedict Cumberbatch, Rachel McAdams, Elizabeth Olsen",
+    "Trajanje": "126 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-05-05",
+    "Slika": "images/doktor_strange.jpg"
+  },
+  {
+    "Naziv": "Top Gun: Maverick",
+    "Redatelj": "Joseph Kosinski",
+    "Godina": "2022",
+    "Žanr": " akcija, avantura",
+    "Uloge": "Tom Cruise, Jennifer Connelly, Val Kilmer",
+    "Trajanje": "131 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-05-26",
+    "Slika": "images/top_gun.jpg"
+  },
+  {
+    "Naziv": "Jurski Svijet: Carstvo",
+    "Redatelj": "Colin Trevorrow",
+    "Godina": "2022",
+    "Žanr": "epska akcijska avantura",
+    "Uloge": "Chris Pratt, Bryce Dallas Howard, Laura Dern, Jeff Goldblum, Sam Neill, DeWanda Wise",
+    "Trajanje": "146 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-06-09",
+    "Slika": "images/jurski_svijet.jpg"
+  },
+  {
+    "Naziv": "Kuhinjska Brigada",
+    "Redatelj": "Louis-Julien Petit",
+    "Godina": "2022",
+    "Žanr": "komedija",
+    "Uloge": "Audrey Lamy, François Cluzet, Chantal Neuwirth",
+    "Trajanje": "97 min",
+    "Država":"Francuska",
+    "PočetakPrikazivanja": "2022-06-09",
+    "Slika": "images/kuhinjska_brigada.jpg"
+  },
+  {
+    "Naziv": "Mamac",
+    "Redatelj": "James Nunn",
+    "Godina": "2022",
+    "Žanr": "triller",
+    "Uloge": "Holly Earl, Jack Trueman, Catherine Hannay",
+    "Trajanje": "87 min",
+    "Država":"Velika Britanija",
+    "PočetakPrikazivanja": "2022-06-16",
+    "Slika": "images/mamac.jpg"
+  },
+  {
+    "Naziv": "Svjetlosni",
+    "Redatelj": "Angus MacLane",
+    "Godina": "2022",
+    "Žanr": "animirani",
+    "Uloge": "Slavko Sobin, Lana Meniga, Rakan Rushaidat, Hrvoje Klobučar, Slavica Knežević, Pero Juričić",
+    "Trajanje": "100 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-06-16",
+    "Slika": "images/svjetlosni.jpg"
+  },
+  {
+    "Naziv": "Belle: Zmaj i pjegava princeza",
+    "Redatelj": "Mamoru Hosoda",
+    "Godina": "2021",
+    "Žanr": "animirana avantura",
+    "Uloge": "Kaho Nakamura, Ryô Narita, Shôta Sometani",
+    "Trajanje": "121 min",
+    "Država":"Japan",
+    "PočetakPrikazivanja": "2022-06-23",
+    "Slika": "images/belle.jpg"
+  },
+  {
+    "Naziv": "Elvis",
+    "Redatelj": "Baz Luhrmann ",
+    "Godina": "2022",
+    "Žanr": "biografski, drama",
+    "Uloge": "Austin Butler, Tom Hanks, Olivia DeJonge",
+    "Trajanje": "160 min",
+    "Država":"SAD",
+    "PočetakPrikazivanja": "2022-06-23",
+    "Slika": "images/elvis.jpg"
+  }
+    
+]

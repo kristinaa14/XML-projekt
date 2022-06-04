@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star City | Filmovi</title>
+    <meta charset="utf-8"/>
+    <meta name="title" content="Star City"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      .film-slika {
+          float: left;
+          width: 32%;
+          margin-right: 15px;
+      }
+      .film {
+          max-width: 650px;
+          padding: 20px;
+          margin: 30px auto;
+          background-color: rgba(81, 81, 81, 0.658);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+          overflow: hidden;
+          color: #cdcdcd;
+          padding: 0;
+      }
+      .film h2{
+        color:#ffffffde;
+      }
+      .app-title {
+          text-align: center;
+          font-weight: normal;
+          padding-top:40px ;
+          margin-top: 0;
+      }
+      .tekst{
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+      .tekst p{
+        margin-bottom: 5px;
+      }
+      .tekst p b{
+        color:#e5e5e5;
+      }
+
+    </style>
+</head>
+<body id="page3">
+
+<div class="pozadina1">
+  <div class="pozadina2">
+    <div id="main">
+      <div id="header">
+        <div class="vrh">
+          <div class="fleft">Star City</div>
+          <ul>
+            <li><a href="#"><img src="images/icon1.gif" alt="" /></a></li>
+            <li><a href="#"><img src="images/icon2.gif" alt="" /></a></li>
+          </ul>
+        </div>
+        <div class="navigacija">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="filmovi.html" class="active">Filmovi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="line-hor"></div>
+        <div class="box">
+          <div class="border-right">
+            <div class="border-left">
+              <div class="inner">
+                <div id="pretrazi">
+                  <h3>Provjerite dostupnost filma</h3>
+                      <label>Naziv Filma: </label>
+                      <input type="text" id="unosFilma" placeholder="Pretraži..">
+                  <p><button onclick="pretrazi()">Provjeri</button></p>
+                  <p id="popup"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>Popis <span>Filmova</span></h3>
+              <div id="jsonPrikaz"></div>
+        </div>
+      </div>
+      
+      <div id="footer">
+        <p>INFO TELEFON: 01 5478 256 (pon-pet od 10h do 18h)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <script>
+        fetch("filmovi.json")   
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(filmovi){
+            document.getElementById("jsonPrikaz").innerHTML = `
+        ${filmovi.map(function(film){
+            return `
+            <div class="filmoviJson">
+            <div class="film">
+                <img class="film-slika" src="${film.Slika}">
+                <div class="tekst">
+                  <h2>${film.Naziv}</h2>
+                  <p><b>Žanr:</b> ${film.Žanr}</p>
+                  <p><b>Redatelj:</b> ${film.Redatelj}</p>
+                  <p><b>Godina:</b> ${film.Godina}</p>
+                  <p><b>Trajanje:</b> ${film.Trajanje}</p>
+                  <p><b>Uloge:</b> ${film.Uloge}</p>
+                  <p><b>Početak prikazivanja:</b> ${film.PočetakPrikazivanja}</p>
+                </div>
+              </div>
+              </div>
+            `
+        }).join('')}
+        ` 
+        })
+
+        function pretrazi(){
+          var danas = new Date();
+          const unos = document.getElementById("unosFilma");
+          var broj = 1;
+          fetch("filmovi.json")   
+          .then((response) => response.json())
+          .then( (data)=>{
+              data.forEach(film =>{
+                if(unos.value.toLowerCase() == film.Naziv.toLowerCase() && unos.value != ""){
+                  broj = 2;
+                  var datum = new Date(film.PočetakPrikazivanja);
+                  if (danas >= datum){
+                    alert("Film je dostupan u kinima!");
+                    return;}
+                  else{
+                    alert("Film će biti " + film.PočetakPrikazivanja +" dostupan u kinima");
+                  }
+                }    
+              } );
+              if (unos.value != "" && broj ==1){
+                  alert("Filma nema na popisu");
+                  return;
+                }
+          });
+        }
+
+      </script>
+
+</body>
+</html>
